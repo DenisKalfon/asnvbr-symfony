@@ -1,0 +1,4 @@
+services:
+#    asnvbr.example:
+#        class: AsnvbrBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

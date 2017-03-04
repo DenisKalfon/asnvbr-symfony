@@ -1,0 +1,7 @@
+asnvbr_homepage:
+    path:     /
+    defaults: { _controller: AsnvbrBundle:Home:index }
+
+asnvbr_qui-sommes-nous:
+    path:     /qui-sommes-nous
+    defaults: { _controller: AsnvbrBundle:QuiSommesNous:index }
