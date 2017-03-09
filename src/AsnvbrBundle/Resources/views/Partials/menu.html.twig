@@ -1,0 +1,75 @@
+<nav class="navbar navbar-header col-xs-12 no-padd">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header visible-xs">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('asnvbr_homepage') }}"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ path('asnvbr_homepage') }}">Accueil <span class="sr-only">(current)</span></a></li>
+                <li class="{{ "'asnvbr_le-club" in app.request.pathInfo ? "active" : "" }}"><a href="{{ path('asnvbr_le-club') }}">Le Club</a></li>
+                <li class="hover-menu {{ "/nos-formations" in app.request.pathInfo ? "active" : "" }}">
+                    <a href="{{ path('asnvbr_nos-formations') }}" class="dropdown-toggle">Nos formations</a>
+                    <ul class="dropdown-menu multi-level">
+                        <li class="dropdown-submenu">
+                            <a href="{{ path('asnvbr_nos-formations/secourisme') }}" class="dropdown-toggle ">Secourisme</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/secourisme/psc1') }}">Prévention et secours civiques Niveau 1</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/secourisme/pse1') }}">Premier Secours Equipier Niveau 1 : PSE 1</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/secourisme/pse2') }}">Premier Secours Equipier Niveau 2 : PSE 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a href="{{ path('asnvbr_nos-formations/sauvetage') }}" class="dropdown-toggle">Sauvetage</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/sauvetage/bnssa') }}">BNSSA</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/sauvetage/bsb') }}">BSB</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('asnvbr_nos-formations/sauvetage/ens') }}">École Nationnale de Sauvetage</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sauvetage Sportif</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Règlement compétition Eau Plate</a>
+                        </li>
+                        <li>
+                            <a href="#">Règlement compétion Côtier</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hover-menu">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Le Coin des Licenciés</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">Poste de Secours</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contactez-nous</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->    
+    </div><!-- /.container-fluid -->
+</nav>

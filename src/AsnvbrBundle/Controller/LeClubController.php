@@ -4,10 +4,10 @@ namespace AsnvbrBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class QuiSommesNousController extends Controller
+class LeClubController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AsnvbrBundle:QuiSommesNous:index.html.twig');
+        return $this->render('AsnvbrBundle:LeClub:index.html.twig');
     }
 }

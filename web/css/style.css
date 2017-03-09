@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 mars 2017, 00:01:57
+    Author     : Denis
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+/*SURCHARGE*/
+body{font-family: 'Lato', sans-serif;background-color:#f1f1f1;font-size: 16px;}
+a{color:#245199;}
+a:hover{color:#000;}
+
+/*PERSO*/
+.no-padd{padding:0 !important}
+.box-shadow{-moz-box-shadow: 0px 0px 5px 0px #a1a1a1;-webkit-box-shadow: 0px 0px 5px 0px #a1a1a1;-o-box-shadow: 0px 0px 5px 0px #a1a1a1;box-shadow: 0px 0px 5px 0px #a1a1a1;filter:progid:DXImageTransform.Microsoft.Shadow(color=#a1a1a1, Direction=NaN, Strength=5);}
+/*HEADER*/
+header{background-image:url(../images/lifeguard.jpg);background-position: center center;border:solid 1px #7c7c7c;padding: 15px 0 0 0 !important;}
+h1 {margin-top:38px;font-size: 28px;font-weight: bold;vertical-align: middle;display:inline-block;text-align:left;padding: 15px;background-color:hsla(0, 0%, 100%, 0.70);border:solid 1px #7d7d7d;color:#000;text-align: center}
+h1 > span{font-size:24px;display: block;}
+header > h2{margin:0;text-align:center;padding:5px 0;background-color:hsla(0, 0%, 100%, 0.85);border:solid 1px #7d7d7d;font-size:16px;font-weight:bold;color:#000;}
+
+/*SECTION/ARTICLE*/
+section.main{background-color:#fff;}
+/*MENU*/
+.container-menu{padding:0}
+.navbar{margin:15px 0;}
+.navbar > .container-fluid, .navbar > .container-fluid .navbar-collapse{padding-left: 0;padding-right: 0;}
+.navbar-nav > li > a{font-size:18px;border-bottom: solid 2px #f1f1f1;width:100%}
+.navbar-nav > li.active > a,.navbar-nav > li:hover > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus{border-color: #245199;background-color:#f1f1f1;color:#337ab7;}
+.dropdown-submenu {
+    position: relative;
+}
+.hover-menu:hover > .dropdown-menu{display:block;min-width: 100%}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+    float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+}

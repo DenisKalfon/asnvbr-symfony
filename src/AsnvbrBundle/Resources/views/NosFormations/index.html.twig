@@ -1,0 +1,23 @@
+{% extends 'AsnvbrBundle::layout.html.twig' %}
+{% block body %}
+    <article class="col-xs-12">
+        <h2>Nos Formations</h2>
+        <p>Notre association vous propose, sous l'égide du Comité Départemental de l'Allier et de la <a href="http://www.ffss.fr/" title="Fédération Française de Sauvetage et de Secourisme">Fédération Française de Sauvetage et de Secourisme</a>, différentes formations qui sont reconnues et agrées par le Ministère de l' Intérieur et le Ministère de la Jeunesse et des Sports.</p>
+        <div class="col-xs-12 col-sm-6">
+            <h3><a href="{{ path('asnvbr_nos-formations/secourisme') }}">Secourisme</a></h3>
+            <ul>
+                <li><a href="{{ path('asnvbr_nos-formations/secourisme/psc1') }}">Premiers Secours Citoyen</a></li>
+                <li><a href="{{ path('asnvbr_nos-formations/secourisme/pse1') }}">Premiers Secours Équipier Niveau 1</a></li>
+                <li><a href="{{ path('asnvbr_nos-formations/secourisme/pse2') }}">Premiers Secours Équipier Niveau 2</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <h3><a href="{{ path('asnvbr_nos-formations/sauvetage') }}">Sauvetage Aquatique</a></h3>
+            <ul>
+                <li><a href="{{ path('asnvbr_nos-formations/sauvetage/bsb') }}">Brevet de Surveillant de Baignade</a></li>
+                <li><a href="{{ path('asnvbr_nos-formations/sauvetage/bnssa') }}" >Brevet National de Sauvetage et de Secourisme</a></li>
+                <li><a href="{{ path('asnvbr_nos-formations/sauvetage/ens') }}">École Nationale de Sauvetage</a></li>
+            </ul>
+        </div>
+    </article>
+{% endblock %}

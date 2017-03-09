@@ -2,6 +2,42 @@ asnvbr_homepage:
     path:     /
     defaults: { _controller: AsnvbrBundle:Home:index }
 
-asnvbr_qui-sommes-nous:
-    path:     /qui-sommes-nous
-    defaults: { _controller: AsnvbrBundle:QuiSommesNous:index }
+asnvbr_le-club:
+    path:     /le-club
+    defaults: { _controller: AsnvbrBundle:LeClub:index }
+    
+asnvbr_nos-formations:
+    path:     /nos-formations
+    defaults: { _controller: AsnvbrBundle:NosFormations:index }
+    
+asnvbr_nos-formations/secourisme:
+    path:     /nos-formations/secourisme
+    defaults: { _controller: AsnvbrBundle:NosFormations:secourisme }
+    
+asnvbr_nos-formations/secourisme/psc1:
+    path:     /nos-formations/secourisme/psc1
+    defaults: { _controller: AsnvbrBundle:NosFormations:psc }
+     
+asnvbr_nos-formations/secourisme/pse1:
+    path:     /nos-formations/secourisme/pse1
+    defaults: { _controller: AsnvbrBundle:NosFormations:pse1 }
+    
+asnvbr_nos-formations/secourisme/pse2:
+    path:     /nos-formations/secourisme/pse2
+    defaults: { _controller: AsnvbrBundle:NosFormations:pse2 }
+    
+asnvbr_nos-formations/sauvetage:
+    path:     /nos-formations/sauvetage
+    defaults: { _controller: AsnvbrBundle:NosFormations:sauvetage }
+    
+asnvbr_nos-formations/sauvetage/bnssa:
+    path:     /nos-formations/sauvetage
+    defaults: { _controller: AsnvbrBundle:NosFormations:bnssa }
+
+asnvbr_nos-formations/sauvetage/bsb:
+    path:     /nos-formations/sauvetage
+    defaults: { _controller: AsnvbrBundle:NosFormations:bsb }
+    
+asnvbr_nos-formations/sauvetage/ens:
+    path:     /nos-formations/sauvetage
+    defaults: { _controller: AsnvbrBundle:NosFormations:ens }
