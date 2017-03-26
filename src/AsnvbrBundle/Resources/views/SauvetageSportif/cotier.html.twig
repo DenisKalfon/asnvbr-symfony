@@ -1,0 +1,34 @@
+{% extends 'AsnvbrBundle::layout.html.twig' %}
+{% block body %} 
+    <article class="col-xs-12">
+        <h2>Les épreuves Côtier</h2>
+        <h3>Nage (Surf Race)</h3>
+        <p>Les sauveteurs partent de la plage et doivent nager, contourner les bouées correspondant à l’épreuve et revenir sur la plage pour franchir la ligne d’arrivée.</p>
+        <h3>Planche de Sauvetage (Board Race)</h3>
+        <p>Les sauveteurs partent de la plage, avec leur planche de sauvetage et doivent effectuer un parcours autour de bouées animées et terminer leurs parcours en courant sur la plage pour passer la ligne d’arrivée.<br />Pour la catégorie Poussin, Benjamin et Minime, le nipper board est obligatoire pour toutes les courses avec planche.</p>
+        <h3>Sprint sur sable (Beach sprint)</h3>
+        <p>Un sauveteur effectue un sprint sur le sable d’une distance de 90m.</p>
+        <h3>Surf Ski (Ski Race)</h3>
+        <p>Le départ se fait dans l’eau et les sauveteurs doivent effectuer un parcours avec leur surf ski délimité par des bouées, avant de revenir vers la plage pour passer la ligne d’arrivée matérialisée par deux drapeaux dans l’eau.</p>
+        <h3>Bâtons musicaux (Beach Flags)</h3>
+        <p>Les sauveteurs sont couchés sur le sable à plat ventre, dos aux bâtons qui sont planté sur une ligne parallèle à la ligne de départ mais distante à 20 m. Il y a un bâton en moins que de participants.<br />Au signal, les compétiteurs se redressent, se retournent et effectuent un sprint pour s’emparer de l’un des bâtons.<br />Celui qui reste sans bâton est éliminé.</p>
+        <h3>Combiné de sauvetage côtier (Ironman Race)</h3>
+        <p>Au cours de cette épreuve reine du sauvetage côtier, les sauveteurs enchaînent les épreuves de nage, planche et surf ski avec une transition en course à pied (l’ordre des épreuves étant tiré au sort).<br />Jusqu’à la catégorie Cadet, les sauveteurs effectueront un Mini Combiné, enchaînement de Nage et Planche.</p>
+        <h3>Relais sprint sur sable (Beach Relay)</h3>
+        <p>Quatre sauveteurs effectuent un relais sur une distance de quatre fois celle du sprint en se transmettant un témoin.<br />Le passage du relais s’effectue face à face.</p>
+        <h3>Relais sauvetage Bouée Tube (Rescue Tube Rescue Race)</h3>
+        <p>Un sauveteur ramène une victime à l’aide d’une bouée tube.<br />Deux sauveteurs assistants remontent cette victime sur la plage jusqu’à la ligne d’arrivée.</p>
+        <h3>Relais sauvetage en Planche (Rescue Board Rescue Relay)</h3>
+        <p class="pull-left">Un sauveteur doit ramener une victime à l’aide d’une planche de sauvetage.<br />La victime se trouve à une distance d’environ 120m de la plage.<br />Ce relais peut être effectué successivement par deux équipes.</p>
+        <p class="pull-right hidden-xs"><img alt="Relais sauvetage" src="{{ asset('images/relais_sauvetage.jpg') }}" style="margin-top: -81px"></p>
+        <h3 class="both">Relais Combine de Sauvetage (Taplin Relay)</h3>
+        <p>Epreuve qui demande à quatre sauveteurs de parcourir différentes distances dans la mer en nageant pour l’un, en parcourant la distance en planche de sauvetage pour un autre et en s’aidant d’un surf ski pour le suivant.<br />Le quatrième terminant ce relais par une course sur le sable.</p>
+        <h3>Relais Planche de Sauvetage</h3>
+        <p>Parcours de planche effectué par quatre relayeurs.</p>
+        <h3>Relais Nage</h3>
+        <p class="pull-left">Parcours de nage effectué par quatre relayeurs.</p>
+        <p class="pull-right hidden-xs"><img alt="Relais sauvetage" src="{{ asset('images/relais_sprint_sur_sable.jpg') }}" style="margin-top: -81px"></p>
+        <h3 class="both">2Km course</h3>
+        <p>Course de 2km sur sable</p>
+    </article>
+{% endblock %}

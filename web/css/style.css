@@ -14,22 +14,27 @@ a{color:#245199;}
 a:hover{color:#000;}
 
 /*PERSO*/
+.f22{font-size: 22px;}
+.both{clear: both}
+.bold{font-weight:bold}
 .no-padd{padding:0 !important}
 .box-shadow{-moz-box-shadow: 0px 0px 5px 0px #a1a1a1;-webkit-box-shadow: 0px 0px 5px 0px #a1a1a1;-o-box-shadow: 0px 0px 5px 0px #a1a1a1;box-shadow: 0px 0px 5px 0px #a1a1a1;filter:progid:DXImageTransform.Microsoft.Shadow(color=#a1a1a1, Direction=NaN, Strength=5);}
+a.btn-perso{background-color:#6fabe8;color:#fff;width:auto;line-height:50px;font-size:20px;display:inline-block;padding: 0 20px;margin:10px;}
+a.btn-perso:hover,a.btn-perso:active,a.btn-perso:focus{background-color:#245199;text-decoration:none;}
+.list-style-none{list-style:none;}
+
 /*HEADER*/
 header{background-image:url(../images/lifeguard.jpg);background-position: center center;border:solid 1px #7c7c7c;padding: 15px 0 0 0 !important;}
 h1 {margin-top:38px;font-size: 28px;font-weight: bold;vertical-align: middle;display:inline-block;text-align:left;padding: 15px;background-color:hsla(0, 0%, 100%, 0.70);border:solid 1px #7d7d7d;color:#000;text-align: center}
 h1 > span{font-size:24px;display: block;}
 header > h2{margin:0;text-align:center;padding:5px 0;background-color:hsla(0, 0%, 100%, 0.85);border:solid 1px #7d7d7d;font-size:16px;font-weight:bold;color:#000;}
 
-/*SECTION/ARTICLE*/
-section.main{background-color:#fff;}
 /*MENU*/
 .container-menu{padding:0}
 .navbar{margin:15px 0;}
 .navbar > .container-fluid, .navbar > .container-fluid .navbar-collapse{padding-left: 0;padding-right: 0;}
 .navbar-nav > li > a{font-size:18px;border-bottom: solid 2px #f1f1f1;width:100%}
-.navbar-nav > li.active > a,.navbar-nav > li:hover > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus{border-color: #245199;background-color:#f1f1f1;color:#337ab7;}
+.navbar-nav > li.active > a,.navbar-nav > li:hover > a, .navbar-nav > li > a:hover, .navbar-nav > li > a:active, .navbar-nav > li > a:focus{border-color: #245199;background-color:#f1f1f1;color:#245199;}
 .dropdown-submenu {
     position: relative;
 }
@@ -62,3 +67,13 @@ section.main{background-color:#fff;}
     left: -100%;
     margin-left: 10px;
 }
+
+/*SECTION/ARTICLE*/
+section.main{background-color:#fff;}
+article > h2{color:#245199;}
+article > h3{color:#6fabe8;}
+.content-formation > li > i{color:#245199;}
+.bloc-ens > img{margin-top: -50px;}
+.tab-ens{margin-top: 10px;}
+.tab-ens a{color:#000;}
+.tab-ens a:hover,.tab-ens a:focus,.tab-ens a:active{text-decoration: none;color:#245199}

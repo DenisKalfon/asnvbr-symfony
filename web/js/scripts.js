@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 $( document ).ready(function() {
-    $(".nav a").on("click", function(){
-       $(".nav").find(".active").removeClass("active");
+    $(".nav-menu a").on("click", function(){
+       $(".nav-menu").find(".active").removeClass("active");
        $(this).parent().addClass("active");
     });
 });

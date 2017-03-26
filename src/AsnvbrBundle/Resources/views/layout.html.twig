@@ -11,7 +11,7 @@
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {# http://asnvbr.cluster015.ovh.net/ #}
+        {# http://asnvbr.cluster015.ovh.net/ #}<h1 class="hidden">{{app.request.headers}}</h1>
         <header class="container">
             <div class="hidden-xs col-sm-2"><img src="{{ asset('images/logo_asnvbr.png') }}" class="img-responsive" alt="Logo ASNVBR" /></div>
             <h1 class="col-xs-12 col-sm-8">
@@ -29,7 +29,7 @@
         <section class="container main box-shadow">
             {% block body %}{% endblock %}
         </section>
-        <footer class="container">
+        <footer class="container text-center">
             ASNVBR - Copyright {{ "now"|date("Y") }}
         </footer>
         {% block javascripts %}

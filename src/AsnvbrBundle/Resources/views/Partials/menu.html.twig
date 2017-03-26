@@ -13,7 +13,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav nav-menu navbar-nav">
                 <li><a href="{{ path('asnvbr_homepage') }}">Accueil <span class="sr-only">(current)</span></a></li>
                 <li class="{{ "'asnvbr_le-club" in app.request.pathInfo ? "active" : "" }}"><a href="{{ path('asnvbr_le-club') }}">Le Club</a></li>
                 <li class="hover-menu {{ "/nos-formations" in app.request.pathInfo ? "active" : "" }}">
@@ -23,7 +23,7 @@
                             <a href="{{ path('asnvbr_nos-formations/secourisme') }}" class="dropdown-toggle ">Secourisme</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ path('asnvbr_nos-formations/secourisme/psc1') }}">Prévention et secours civiques Niveau 1</a>
+                                    <a href="{{ path('asnvbr_nos-formations/secourisme/psc1') }}">Prévention et Secours Civiques Niveau 1 : PSC 1</a>
                                 </li>
                                 <li>
                                     <a href="{{ path('asnvbr_nos-formations/secourisme/pse1') }}">Premier Secours Equipier Niveau 1 : PSE 1</a>
@@ -43,20 +43,20 @@
                                     <a href="{{ path('asnvbr_nos-formations/sauvetage/bsb') }}">BSB</a>
                                 </li>
                                 <li>
-                                    <a href="{{ path('asnvbr_nos-formations/sauvetage/ens') }}">École Nationnale de Sauvetage</a>
+                                    <a href="{{ path('asnvbr_nos-formations/sauvetage/ens') }}">École Nationale de Sauvetage</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li class="hover-menu">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sauvetage Sportif</a>
+                <li class="hover-menu {{ "/sauvetage-sportif" in app.request.pathInfo ? "active" : "" }}">
+                    <a href="{{ path('asnvbr_sauvetage-sportif') }}" class="dropdown-toggle">Sauvetage Sportif</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Règlement compétition Eau Plate</a>
+                            <a href="{{ path('asnvbr_sauvetage-sportif/eau-plate') }}">Règlement compétition Eau Plate</a>
                         </li>
                         <li>
-                            <a href="#">Règlement compétion Côtier</a>
+                            <a href="{{ path('asnvbr_sauvetage-sportif/cotier') }}">Règlement compétion Côtier</a>
                         </li>
                     </ul>
                 </li>
@@ -64,11 +64,11 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Le Coin des Licenciés</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#">Poste de Secours</a>
+                            <a href="{{ path('asnvbr_le-coin-des-licencies/le-poste-de-secours') }}">Poste de Secours</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="#">Contactez-nous</a></li>
+                <li><a href="{{ path('asnvbr_contact') }}">Contactez-nous</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->    
     </div><!-- /.container-fluid -->

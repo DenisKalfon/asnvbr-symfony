@@ -1,0 +1,19 @@
+{% extends 'AsnvbrBundle::layout.html.twig' %}
+{% block body %} 
+    <article class="col-xs-12">
+        <h2>Description des épreuves</h2>
+        <h3>En piscine et en plein air</h3>
+        <p>Le sauvetage sportif est une discipline sportive à part entière, qui se caractérise par la diversité de ses épreuves :</p>
+        <ul class="list-style-none content-formation">
+            <li><i class="glyphicon glyphicon-chevron-right"></i> En mer ou en plan d'eau, avec ou sans embarcation, ce sont des épreuves de "côtier".</li>
+            <li><i class="glyphicon glyphicon-chevron-right"></i> En piscine, ce sont des épreuves d'eau plate.</li>
+        </ul>
+        <p>Ces rencontres spectaculaires attirent tout le temps un public toujours nombreux qui ne se lasse jamais. Les règles appliquées à chaque épreuve sont simples et facilitent la compréhension des spectateurs.</p>
+        <p>Les disciplines du sauvetage sportif, souvent pratiquées avec engin, se répartissent dans des domaines différents allant de la nage au kayak, les épreuves colectives omniprésentes rappelant sans cesse le caractère salvateur de la spécialité.</p>
+        <p>L'activité se pratique en compétition du niveau local au niveau niveau mondial, avec le même souci de réalisation de performance.</p>
+        <p class="text-center col-xs-12 no-padd">
+            <a class="btn-perso" title="Épreuve Eau Plate" href="{{ path('asnvbr_sauvetage-sportif/eau-plate') }}">Découvrir les épreuves d'eau plate</a>
+            <a class="btn-perso" title="Épreuve Côtier" href="{{ path('asnvbr_sauvetage-sportif/cotier') }}">Découvrir les épreuves de côtier</a>
+        </p>
+    </article>
+{% endblock %}

@@ -31,13 +31,33 @@ asnvbr_nos-formations/sauvetage:
     defaults: { _controller: AsnvbrBundle:NosFormations:sauvetage }
     
 asnvbr_nos-formations/sauvetage/bnssa:
-    path:     /nos-formations/sauvetage
+    path:     /nos-formations/sauvetage/bnssa
     defaults: { _controller: AsnvbrBundle:NosFormations:bnssa }
 
 asnvbr_nos-formations/sauvetage/bsb:
-    path:     /nos-formations/sauvetage
+    path:     /nos-formations/sauvetage/bsb
     defaults: { _controller: AsnvbrBundle:NosFormations:bsb }
     
 asnvbr_nos-formations/sauvetage/ens:
-    path:     /nos-formations/sauvetage
+    path:     /nos-formations/sauvetage/ens
     defaults: { _controller: AsnvbrBundle:NosFormations:ens }
+    
+asnvbr_sauvetage-sportif:
+    path:     /sauvetage-sportif
+    defaults: { _controller: AsnvbrBundle:SauvetageSportif:index }
+    
+asnvbr_sauvetage-sportif/eau-plate:
+    path:     /sauvetage-sportif/eau-plate
+    defaults: { _controller: AsnvbrBundle:SauvetageSportif:eauPlate }
+    
+asnvbr_sauvetage-sportif/cotier:
+    path:     /sauvetage-sportif/cotier
+    defaults: { _controller: AsnvbrBundle:SauvetageSportif:cotier }
+    
+asnvbr_le-coin-des-licencies/le-poste-de-secours:
+    path:     /le-coin-des-licencies/le-poste-de-secours
+    defaults: { _controller: AsnvbrBundle:CoinLicencies:posteSecours }
+    
+asnvbr_contact:
+    path:     /contact
+    defaults: { _controller: AsnvbrBundle:Contact:index }
